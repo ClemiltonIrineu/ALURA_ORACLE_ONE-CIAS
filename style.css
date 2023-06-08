@@ -1,0 +1,252 @@
+body {
+    background: linear-gradient(rgba(0, 0, 139, 0), rgba(0, 0, 139, 1)) no-repeat fixed;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.sidebar{
+    position: fixed;
+    left: 85%;
+}
+  .sidebar button {
+    color: black;
+    margin: 5px;
+    text-decoration: none;
+  }
+  .sidebar button.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+  .sidebar button:hover:not(.active) {
+    background-color: #555;
+    color: white;
+  }
+
+
+header {
+    display: flex;
+    width: 100%;
+    margin-top: 5px;
+    align-items: center;
+}
+
+header h1 {
+    font-weight: bold;
+    font-size: 40px;
+    width: 100%;
+    text-align: center;
+}
+
+.texto {
+    background: 0;
+    color: blue;
+    font-size: 20px;
+    margin-top: 10%;
+    margin-left: 10%;
+    align-items: center;
+    padding: 1em 1em 1em;
+    width: 55%;
+    border: none;
+    border-radius: 20px;
+}
+
+.area-pesquisa div {
+    margin-top: 10%;
+    margin-left: 10%;
+    font-size: 15px;
+}
+
+.area-pesquisa img {
+    filter: brightness(0.25) opacity(0.75);
+}
+
+.area-pesquisa button {
+    width: 25%;
+    margin: 10px;
+    padding: 15px 0;
+    background: blue;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+.area-pesquisa button:nth-child(3) {
+    background: #8cd3ff;
+    color: blue;
+}
+
+.area-pesquisa button:nth-child(2):hover {
+    background: darkblue;
+    transform: scale(1.1);
+}
+
+.area-pesquisa button:nth-child(3):hover {
+    background: #3db5ff;
+    transform: scale(1.1);
+}
+
+.caixa-visualizar {
+    position: absolute;
+    top: 10%;
+    left: 70%;
+    font-size: 18px;
+    background: lightblue;
+    height: 430px;
+    width: 310px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px black;
+}
+
+.caixa-visualizar img {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.caixa-visualizar h2,
+h1 {
+    padding: 10px 10px;
+    font-size: 23px;
+    text-align: center;
+}
+
+.caixa-visualizar h1 {
+    text-transform: uppercase;
+}
+
+
+.btnCopiar {
+    position: absolute;
+    top: 420px;
+    left: 73%;
+    width: 20%;
+    margin: 10px;
+    padding: 15px 0;
+    background: blue;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    transition: 1s all;
+    cursor: pointer;
+    visibility: hidden;
+}
+
+.btnCopiar:hover {
+    background: darkblue;
+    transform: scale(1.1);
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 5px;
+    width: 100%;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 480px) {
+    .sidebar{
+        left: 30%;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+    }
+
+    header h1 {
+        font-size: 20px;
+    }
+
+    .texto {
+        margin-top: 10%;
+        margin-left: 15%;
+        width: auto;
+    }
+
+    .area-pesquisa div {
+        font-size: 10px;
+    }
+
+    .area-pesquisa button {
+        width: 35%;
+        font-size: 15px;
+    }
+
+    .caixa-visualizar {
+        position: relative;
+        left: 10%;
+        margin-top: 5%;
+        height: 330px;
+        width: 240px;
+    }
+
+    .caixa-visualizar h2,
+    h1 {
+        font-size: 15px;
+    }
+
+    .btnCopiar {
+        position: absolute;
+        top: 580px;
+        left: 30%;
+        width: 30%;
+        font-size: 15px;
+    }
+
+    footer {
+        margin-left: 5px;
+        font-size: 13px;
+        bottom: 25px;
+        visibility: hidden;
+    }
+
+    footer::before  {
+        visibility: visible;
+        content: "Desenvolvido por CIAS - 2023";
+    }
+}
+
+
+
+@media screen and (max-width: 380px) {
+    .sidebar{
+        left: 30%;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .caixa-visualizar {
+        position: relative;
+        left: 10%;
+        margin-top: 5%;
+        height: 230px;
+        width: 240px;
+    }
+
+      .btnCopiar {
+        position: absolute;
+        top: 530px;
+        left: 30%;
+        width: 30%;
+        font-size: 15px;
+    }
+
+    footer {
+        margin-left: 5px;
+        font-size: 13px;
+        bottom: 25px;
+        visibility: hidden;
+    }
+
+    footer::before  {
+        visibility: visible;
+        content: "Desenvolvido por CIAS - 2023";
+    }
+}
